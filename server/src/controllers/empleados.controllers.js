@@ -9,7 +9,7 @@ const listarEmpleados = (req, res) => {
         if (err) {
           console.log(err);
         } else {
-          res.send(result)
+          res.send(result.rows)   //envio solo los datos que quiero, no incluyo metadatos como cuando envío "result" solo
         }
       }
     );
