@@ -38,7 +38,7 @@ const createEmpleados = (req, res) => {
         if (err) {
           console.log(err);
         } else {
-          res.send(result)
+          res.send(result.rows)
         }
       }
     );
@@ -66,7 +66,7 @@ const updateEmpleados = (req, res) => {
         if (err) {
           console.log(err);
         } else {
-          res.send(result)
+          res.send(result.rows)
         }
       }
     );
@@ -94,7 +94,7 @@ const deleteEmpleados = (req, res) => {
         if (err) {
           console.log(err);
         } else {
-          res.send(result)
+          res.send(result.rows)
         }
       }
     );
